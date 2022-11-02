@@ -27,7 +27,7 @@
   "name": "libsignal-lookup",
   "scripts": {
     "build": "tsc -b && cp src/libsignal/protobuf/compiled.js dist/libsignal/protobuf/compiled.js",
-    "format": "prettier --write '**/*.{json,md,ts}' '!node_modules/**'",
+    "format": "prettier --write '**/*.{json,md,ts}' '!dist/**' '!node_modules/**'",
     "prepare": "husky install",
     "prepublish": "npm run build"
   },
